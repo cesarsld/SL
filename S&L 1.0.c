@@ -3,9 +3,12 @@
 #include <time.h>
 
 int main() {
+	FILE * TokenPosition:
+	TokenPosition=fopen("Tokenposition.txt",)
+	
 
     srand(time(NULL)); 
-	int c=1000000, avgames=0, p=0, min_turns=100, max_turns=1;
+	int c=2000000, avgames=0, p=0, min_turns=100, max_turns=1;
     int i=0, tp = 0, dv, turn=0, ttp=0;   //tp stands for the token position and dn the die value
 	int tokenposition[101]={0};
     int l1 = 1, l2 = 4, l3 = 9, l4 = 21, l5 = 28, l6 = 36, l7 = 51, l8 = 71, l9 = 80;

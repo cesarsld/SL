@@ -80,7 +80,7 @@ void game() {
 int main() {
      srand(time(NULL));                                                                  /*use time as seed to make the random number generator as random as possible*/
      board();
-     int c=50000000,j=0, likelysqr=0, leastsqr=0, r=0, s=100000000;                     /*c is the number of games simulated, avgames the mean value of number of rolls, likelysqr is the most common square and leastsqr, the least likely*/
+     int c=5000000,j=0, likelysqr=0, leastsqr=0, r=0, s=100000000;                     /*c is the number of games simulated, avgames the mean value of number of rolls, likelysqr is the most common square and leastsqr, the least likely*/
      long avgames=0;                                                                     /*using a long int to allow putting all the different roll numbers*/
      int likelyroll=0, minimumroll=0, l=0, m=0;
      int rollnumber[500]={0};                                                            /*rollnumber[x] hold the number of times a game has finished in x rolls*/
@@ -103,9 +103,9 @@ int main() {
           if (s>tokenposition[p] && tokenposition[p]>0){                                 /*Finds the least common square*/
                leastsqr=p;
                s=tokenposition[p];
-}
+ 		}
 
-     }
+     		}
          fprintf(fs,"%d %d\n", p, tokenposition[p]);                                     /*loads data to position.txt*/
      }
      fclose(fs);
